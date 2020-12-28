@@ -1,0 +1,203 @@
+/*Definindo configurações básicas da página*/
+body, html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*Configurando/estilizando tags semânticas*/
+header{
+    width: 100%;
+    height: 15%;
+    float: left;
+    background-color: rgb(114, 46, 0);
+}
+
+main{
+    width: 100%;
+    height: 75%;
+    float: left;
+    background-color: rgb(255, 231, 94);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    width: 100%;
+    height: 10%;
+    float: left;
+    background-color: black;
+}
+
+/*Configurações/estilização de outras tags e elementos*/
+center.pageTitle{
+    /*Determinndo design da fonte*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 60px;
+    color: white;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    /*Posicionando no mei do header*/
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+/******************************************************
+Configurações do formulário e seus elementos principal
+******************************************************/
+div.formArea{
+    width: 30%;
+    height: 40%;
+}
+
+form.mainForm{
+    width: 100%;
+    height: 100%;
+}
+
+fieldset.mainForm{
+    width: 100%;
+    height: 100%;
+    border-style: solid;
+    border-color: rgb(114, 46, 0);
+    border-width: 3px;
+    background-color: white;
+}
+
+legend.question{
+    /*Configurações da fonte*/
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: black;
+    /*Configuraações do layout*/
+    display: block;
+    border-style: solid;
+    border-color: rgb(114, 46, 0);
+    border-width: 3px;
+    background-color: white;
+}
+
+label.options{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: black;
+}
+
+input[type=submit]{
+    /*Configurações do layout do botão*/
+    width: 65px;
+    height: 32px;
+    background-color: rgb(0, 110, 255);
+    /*Configurações da fonte*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: white;
+    /*Demais configurações*/
+    margin-top: 10px;
+}
+
+input[type=submit]:hover{
+    cursor: pointer;
+    transform: scale(0.95);
+}
+
+input[type=submit]:active{
+    transform: scale(0.9);
+}
+
+/******************************************************
+Configurações do área do jogo
+******************************************************/
+div.gameArea{
+    width: 33%;
+    height: 70%;
+    background-color: white;
+}
+
+div.title_gameAsk{
+    width: 100%;
+    height: 15%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+
+font.gameTitle{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+div.content_gameAsk{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+
+div.gameAsk{
+    width: 92%;
+    height: 100%;
+}
+
+p.gameAsk{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: justify;
+}
+
+div.input_gameAsk{
+    width: 100%;
+    height: 10%;
+    float: left;
+}
+
+input.input_gameAnswer{
+    width: 75%;
+    height: 100%;
+    width: calc(75% - 20px);
+    border: 0;
+    margin: 0;
+    padding: 0 10px;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    color: black;
+    background-color: rgb(189, 189, 189);
+    float: left;
+}
+
+input::placeholder{
+    color: #333;
+}
+
+button.submit_gameAnswer{
+    width: 25%;
+    height: 100%;
+    border: 0;
+    background-color: rgb(0, 110, 255);
+    font-family: Arial Black;
+    font-size: 25px;
+    color: white;
+    float: left;
+}
+
+button.submit_gameAnswer:hover{
+    background-color: rgb(0, 90, 207);
+    font-size: 30px;
+}
