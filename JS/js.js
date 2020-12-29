@@ -37,9 +37,21 @@ function chooseTheGame(){
 //Função mostrar a pergunta
 function showAsk(){
     var pageTitle = window.document.getElementById('pageTitle');
-    if(Game == "Charada"){
-        pageTitle.innerText = "Charada";
-        charada();
+    switch (Game) {
+        case "Enigma":
+            pageTitle.innerText = "Enigma";
+            enigma();
+            break;
+        case "Charada":
+            pageTitle.innerText = "Charada";
+            charada();
+            break;
+        case "Codigo":
+            pageTitle.innerText = "Descubra o código";
+            descubraOCodigo();
+            break;
+        default:
+            noAskChoosen();
     }
 }
 
@@ -78,11 +90,45 @@ function checkAnswer(){
     }
 }
 
-//Função para o enigma
+//Funçoes para as perguntas
+function enigma(){
+    var askTitle = window.document.getElementById('askTitle');
+    var askContent = window.document.getElementById('askContent');
+    askTitle.innerText = "Dois oposto em um só.";
+    askContent.innerText = "Contruo castelos e derrubo montanhas. Ajudo uns a enxergar e outros a ficar cegos.\nQuem sou eu?";
+    correctAnswer = "areia";
+}
+
 function charada(){
     var askTitle = window.document.getElementById('askTitle');
     var askContent = window.document.getElementById('askContent');
     askTitle.innerText = "Bloqueável, mas não vencida!";
     askContent.innerText = "Meu inimigo me bloqueia, mas não me vence.\nQuem sou eu?";
     correctAnswer = "luz";
+}
+
+function descubraOCodigo(){
+    var askTitle = window.document.getElementById('askTitle');
+    var askContent = window.document.getElementById('askContent');
+    askTitle.innerText = "Código Morse";
+    askContent.innerText = "...- . .--- .- / .- / .-. . ... .--. --- ... - .- ... / .- -... .- .. -..- ---\n.-.. . --- .--. .- .-. -.. ---";
+    correctAnswer = "leopardo";
+}
+
+function noAskChoosen(){
+    const modal = window.document.getElementById('answerAlert');
+    const alertTitle = window.document.getElementById('alertTitle');
+    const alertText = window.document.getElementById('alertText');
+    const button_backToHome = window.document.getElementById('backToHome');
+    const button_close = window.document.getElementById('close');
+    const alertBorder = window.document.getElementById('modalBlock');
+    alertBorder.style.borderColor = ' rgb(114, 46, 0)';
+    alertTitle.style.color = 'red';
+    alertText.style.color = 'black';
+    alertTitle.innerText = "Você ocasionou um bug!";
+    alertText.innerText = "Provavelmente, você tentou manipular o URL para entrar nesta página, sem escolher um jogo.\nPor favor, volte à página inicial, pelo botão abaixo!";
+    button_backToHome.style.display = 'flex';
+    modal.style.display = 'flex';
+    button_close.style.display = 'none';
+    modal.style.display = 'flex';
 }
