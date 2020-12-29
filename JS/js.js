@@ -32,20 +32,20 @@ function chooseTheGame(){
 /*************************
  * Sistema das perguntas
 *************************/
-var askTitle = window.document.getElementById('askTitle');
-var askContent = window.document.getElementById('askContent');
 
 //Função mostrar a pergunta
 function showAsk(){
     var pageTitle = window.document.getElementById('pageTitle');
     if(Game == "Charada"){
-        //pageTitle.innerText("Charada");
+        pageTitle.innerText = "Charada";
         charada();
     }
 }
 
 //Função para o enigma
 function charada(){
-    askTitle.innerText('Bloqueável, mas não vencida!');
-    askContent.innerText('Meu inimigo me bloqueia, mas não me vence.<br>Quem sou eu?');
+    var askTitle = window.document.getElementById('askTitle');
+    var askContent = window.document.getElementById('askContent');
+    askTitle.innerText = "Bloqueável, mas não vencida!";
+    askContent.innerText = "Meu inimigo me bloqueia, mas não me vence.\nQuem sou eu?";
 }
