@@ -2,6 +2,7 @@
  * Funcionamento do sistema completo
  ***********************************/
 var Game = sessionStorage.getItem('game');
+var correctAnswer = "none";
 
 function chooseTheGame(){
     //Selecionando os inputsRadio
@@ -42,10 +43,46 @@ function showAsk(){
     }
 }
 
+//Função para checar se a resposta está correta
+function checkAnswer(){
+    var answer = window.document.getElementById('answer').value.toLowerCase();
+    const modal = window.document.getElementById('answerAlert');
+    const alertTitle = window.document.getElementById('alertTitle');
+    const alertText = window.document.getElementById('alertText');
+    const button_backToHome = window.document.getElementById('backToHome');
+    const button_close = window.document.getElementById('close');
+    const alertBorder = window.document.getElementById('modalBlock');
+    if(answer == correctAnswer){
+        alertBorder.style.borderColor = 'limegreen';
+        alertTitle.style.color = 'limegreen';
+        alertText.style.color = 'green';
+        alertTitle.innerText = "Parabéns!";
+        alertText.innerText = "Você acertou a resposta!";
+        button_backToHome.style.display = 'flex';
+        modal.style.display = 'flex';
+        button_close.style.display = 'none';
+        modal.style.display = 'flex';
+    }else{
+        alertBorder.style.borderColor = 'red';
+        alertTitle.style.color = 'red';
+        alertText.style.color = 'red';
+        alertTitle.innerText = "Ops! Resposta errada!";
+        alertText.innerText = "Tente novamente.";
+        button_backToHome.style.display = 'none';
+        modal.style.display = 'flex';
+        button_close.addEventListener('click', closeAlert);
+    }
+
+    function closeAlert(){
+        modal.style.display = 'none';
+    }
+}
+
 //Função para o enigma
 function charada(){
     var askTitle = window.document.getElementById('askTitle');
     var askContent = window.document.getElementById('askContent');
     askTitle.innerText = "Bloqueável, mas não vencida!";
     askContent.innerText = "Meu inimigo me bloqueia, mas não me vence.\nQuem sou eu?";
+    correctAnswer = "luz";
 }

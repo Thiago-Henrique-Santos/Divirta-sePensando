@@ -32,10 +32,30 @@
 
             <div class="input_gameAsk">
                 <input placeholder="Insira a resposta aqui..." type="text" id="answer" class="input_gameAnswer">
-                <button class="submit_gameAnswer">OK</button>
+                <button class="submit_gameAnswer" onclick="checkAnswer()">OK</button>
             </div>
         </div>
 
+        <!--Início modal que aparece quando clica em comprar-->
+        <div id="answerAlert" class="modal-content">
+            <div class="modal" id="modalBlock">
+                <button class="close" id="close">x</button><br>
+                <CENTER>
+                    <font class="modal-title" id="alertTitle"></font>
+                </CENTER>
+                <br>
+                <CENTER>
+                    <font class="modal-text" id="alertText"></font>
+                </CENTER>
+                <br>
+                <CENTER>
+                    <button class="correctAnswer" id="backToHome">
+                        <a class="button_correctAnswer" href="index.html">Voltar à página principal</a>
+                    </button>
+                </CENTER>
+            </div>
+        </div>
+        <!--Fim modal que aparece quando clica em comprar-->
     </MAIN>
 
     <FOOTER>
