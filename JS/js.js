@@ -36,7 +36,7 @@ function chooseTheGame(){
 
 //Função mostrar a pergunta
 function showAsk(){
-    var pageTitle = window.document.getElementById('pageTitle');
+    const pageTitle = window.document.getElementById('pageTitle');
     switch (Game) {
         case "Enigma":
             pageTitle.innerText = "Enigma";
@@ -92,24 +92,24 @@ function checkAnswer(){
 
 //Funçoes para as perguntas
 function enigma(){
-    var askTitle = window.document.getElementById('askTitle');
-    var askContent = window.document.getElementById('askContent');
+    const askTitle = window.document.getElementById('askTitle');
+    const askContent = window.document.getElementById('askContent');
     askTitle.innerText = "Dois oposto em um só.";
     askContent.innerText = "Contruo castelos e derrubo montanhas. Ajudo uns a enxergar e outros a ficar cegos.\nQuem sou eu?";
     correctAnswer = "areia";
 }
 
 function charada(){
-    var askTitle = window.document.getElementById('askTitle');
-    var askContent = window.document.getElementById('askContent');
+    const askTitle = window.document.getElementById('askTitle');
+    const askContent = window.document.getElementById('askContent');
     askTitle.innerText = "Bloqueável, mas não vencida!";
     askContent.innerText = "Meu inimigo me bloqueia, mas não me vence.\nQuem sou eu?";
     correctAnswer = "luz";
 }
 
 function descubraOCodigo(){
-    var askTitle = window.document.getElementById('askTitle');
-    var askContent = window.document.getElementById('askContent');
+    const askTitle = window.document.getElementById('askTitle');
+    const askContent = window.document.getElementById('askContent');
     askTitle.innerText = "Código Morse";
     askContent.innerText = "...- . .--- .- / .- / .-. . ... .--. --- ... - .- ... / .- -... .- .. -..- ---\n.-.. . --- .--. .- .-. -.. ---";
     correctAnswer = "leopardo";
