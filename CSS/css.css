@@ -8,10 +8,17 @@ body, html{
 
 /*Configurando/estilizando tags semânticas*/
 header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 15%;
+    background-color: rgb(114, 46, 0);
+}
+
+div.header-fill{
     width: 100%;
     height: 15%;
     float: left;
-    background-color: rgb(114, 46, 0);
 }
 
 main{
