@@ -1,0 +1,54 @@
+font.title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+    color: black;
+}
+
+font.last-update{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 23px;
+    color: black;
+}
+
+p.main-topic{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 23px;
+    font-weight: bold;
+    text-align: justify;
+    color: rgb(102, 102, 102);
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+font.subtitle{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: justify;
+    color: black;
+}
+
+p.topic{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    color: black;
+    margin-bottom: 50px;
+}
+
+ul.topics-list{
+    margin-bottom: 50px;
+    list-style: none;
+}
+
+a.topics-list{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    color: royalblue;
+    text-decoration: none;
+}
+
+a.topics-list:hover{
+    color: rgb(22, 22, 255);
+}

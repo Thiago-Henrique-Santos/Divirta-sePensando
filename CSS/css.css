@@ -49,7 +49,6 @@ center.pageTitle{
 }
 
 font.pageTitle{
-    /*Determinndo design da fonte*/
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
     font-size: 60px;
@@ -368,4 +367,35 @@ a.button_correctAnswer{
     font-family: 'Arial Black', Arial, Helvetica, sans-serif;
     font-size: 20px;
     text-decoration: none;
+}
+
+/******************************************************************
+Configurações do área de páginas com grandes textos de informações
+******************************************************************/
+div.informationArea{
+    width: 45%;
+    height: 90%;
+    background-color: white;
+}
+
+div.information-textBlock{
+    width: 90%;
+    height: 97%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+}
+
+div.hide-iframeScrollBar{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+iframe.information-row{
+    display: block;
+    border: none;
+    width: calc(100% + 17px);
+    height: 100%;
 }
