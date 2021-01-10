@@ -95,7 +95,7 @@ function enigma(){
     const askTitle = window.document.getElementById('askTitle');
     const askContent = window.document.getElementById('askContent');
     askTitle.innerText = "Dois oposto em um só.";
-    askContent.innerText = "Contruo castelos e derrubo montanhas. Ajudo uns a enxergar e outros a ficar cegos.\nQuem sou eu?";
+    askContent.innerText = "Construo castelos e derrubo montanhas. Ajudo uns a enxergar e outros a ficar cegos.\nQuem sou eu?";
     correctAnswer = "areia";
 }
 

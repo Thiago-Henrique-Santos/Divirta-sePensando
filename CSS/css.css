@@ -12,7 +12,7 @@ header{
     top: 0;
     width: 100%;
     height: 15%;
-    background-color: rgb(114, 46, 0);
+    background-color: rgb(0, 81, 187);
 }
 
 div.header-fill{
@@ -25,7 +25,7 @@ main{
     width: 100%;
     height: 75%;
     float: left;
-    background-color: rgb(255, 231, 94);
+    background-color:orange;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -405,10 +405,9 @@ Configurações exclusivas da página Sobre
 ****************************************/
 main#Sobre{
     width: 100%;
-    min-height: 75%;
-    max-height: 1000px;
+    height: auto;
     float: left;
-    background-color: rgb(255, 231, 94);
+    background-color: orange;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -424,5 +423,5 @@ main#Sobre{
 div.informationBlock{
     width: 90%;
     height: 90%;
-    margin: 5%;
+    margin: 50px;
 }
