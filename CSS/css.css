@@ -399,29 +399,3 @@ iframe.information-row{
     width: calc(100% + 17px);
     height: 100%;
 }
-
-/****************************************
-Configurações exclusivas da página Sobre
-****************************************/
-main#Sobre{
-    width: 100%;
-    height: auto;
-    float: left;
-    background-color: orange;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.informationArea-sobre{
-    width: 90%;
-    height: 100%;
-    background-color: white;
-}
-
-div.informationBlock{
-    width: 90%;
-    height: 90%;
-    margin: 50px;
-}
