@@ -1,4 +1,15 @@
 /**********************
+Títulos de nível 1
+**********************/
+h1.title-1{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 40px;
+}
+
+/**********************
 Parágrafos
 **********************/
 p.main-topic{
@@ -17,6 +28,12 @@ p.topic{
     text-align: justify;
     color: black;
     margin-bottom: 50px;
+}
+
+p.SmallBig-text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: 700;
 }
 
 /**********************

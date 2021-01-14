@@ -3,10 +3,6 @@ main#Sobre{
     height: auto;
     float: left;
     background-color: orange;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
 }
 
 .informationArea-sobre{
@@ -21,20 +17,26 @@ div.content-block{
 }
 
 .first-block{
-    background-color: white;
+    background-color: rgb(121, 190, 255);
 }
 
 div.firstBlock-mainTopic-text{
+    width: 500px;
+    height: 500px;
     margin-left: 50px;
     float: left;
+    margin-top: 125px;
+    margin-bottom: 125px;
+    margin-left: 125px;
 }
 
 img.firstBlock-image{
-    width: 800px;
-    heihgt: 800px;
+    width: auto;
+    height: 400px;
     float: right;
-    margin-top: 50px;
-    margin-right: 50px;
+    margin-top: 175px;
+    margin-bottom: 175px;
+    margin-right: 75px;
 }
 
 .second-block{

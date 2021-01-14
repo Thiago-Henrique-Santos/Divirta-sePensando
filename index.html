@@ -20,19 +20,13 @@
 
     <MAIN>
 
-        <!--Bloco do formulário-->
         <div class="formArea">
-            <!--Formulário principal para a escolha da brincadeira-->
             <form class="mainForm" action="play.html" onsubmit="return chooseTheGame()">
-                <!--Área dos caampos do formulário-->
                 <fieldset class="mainForm">
-                    <!--Label sobre o que será as opções-->
                     <legend class="question">Selecione um desafio</legend><br>
-                    <!--Opções-->
                     <input type="radio" id="enigma" name="options"value="Enigma"><label class="options" for="enigma">Enigma</label><br>
                     <input type="radio" id="charada" name="options"value="Charada"><label class="options" for="charada">Charada</label><br>
                     <input type="radio" id="codigo" name="options"value="Codigo"><label class="options" for="codigo">Descubra o código</label><br>
-                    <!--Botão de submit-->
                     <input type="submit" class="submitButton" value="Ir">
                 </fieldset>
             </form>
