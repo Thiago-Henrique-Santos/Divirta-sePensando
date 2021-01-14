@@ -1,3 +1,27 @@
+/**********************
+Parágrafos
+**********************/
+p.main-topic{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 23px;
+    font-weight: bold;
+    text-align: justify;
+    color: rgb(102, 102, 102);
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+p.topic{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    color: black;
+    margin-bottom: 50px;
+}
+
+/**********************
+Fontes
+**********************/
 font.title{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 45px;
@@ -11,16 +35,6 @@ font.last-update{
     color: black;
 }
 
-p.main-topic{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 23px;
-    font-weight: bold;
-    text-align: justify;
-    color: rgb(102, 102, 102);
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-
 font.subtitle{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
@@ -29,14 +43,12 @@ font.subtitle{
     color: black;
 }
 
-p.topic{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    text-align: justify;
-    color: black;
-    margin-bottom: 50px;
-}
-
+/**********************
+Listas/Menus
+**********************/
+/*Lista de tópicos das páginas:
+•Política de Privacidade
+•Termos de Uso*/
 ul.topics-list{
     margin-bottom: 50px;
     list-style: none;
