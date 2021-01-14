@@ -24,6 +24,19 @@ div.content-block{
     background-color: white;
 }
 
+div.firstBlock-mainTopic-text{
+    margin-left: 50px;
+    float: left;
+}
+
+img.firstBlock-image{
+    width: 800px;
+    heihgt: 800px;
+    float: right;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
 .second-block{
-    background-color: white;
+    background-color: black;
 }
