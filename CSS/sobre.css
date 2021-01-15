@@ -2,7 +2,9 @@ main#Sobre{
     width: 100%;
     height: auto;
     float: left;
-    background-color: orange;
+    background-image: url(../img/background.png);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .informationArea-sobre{
