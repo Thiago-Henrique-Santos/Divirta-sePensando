@@ -7,7 +7,7 @@ main#Sobre{
 
 .informationArea-sobre{
     width: 90%;
-    height: 100%;
+    height: auto;
     background-color: white;
 }
 
@@ -40,5 +40,46 @@ img.firstBlock-image{
 }
 
 .second-block{
-    background-color: black;
+    background-color: rgb(18, 13, 48);
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+div.secondBlock-contentBlock{
+    width: 90%;
+    height: 700px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+div.secondBlock-firstPart{
+    width: 100%;
+    height: auto;
+    max-height: 350px;
+    float: left;
+}
+
+div.secondBlock-secondPart{
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    max-height: 350px;
+    float: left;
+}
+
+img.secondBlock-image{
+    width: auto;
+    height: 400px;
+    float: right;
+    margin-left: 25px;
+    margin-right: 25px;
+    float: left;
+}
+
+div.secondBlock-alignRight{
+    float: left;
+}
+
+.lastParagraph_secondPart{
+    margin-bottom: 75px;
 }
