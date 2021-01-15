@@ -36,7 +36,7 @@ function chooseTheGame(){
 
 //Função mostrar a pergunta
 function showAsk(){
-    const pageTitle = window.document.getElementById('pageTitle');
+    const pageTitle = window.document.querySelector('font.pageTitle');
     switch (Game) {
         case "Enigma":
             pageTitle.innerText = "Enigma";
